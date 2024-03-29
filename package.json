@@ -11,8 +11,8 @@
     "type-check": "vue-tsc --build --force",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
-    "predeploy" : "npm run build",
-    "deploy" : "set NODE_ENV=production && gh-pages -d out --nojekyll --cname xlynxx.xyz"
+    "predeploy" : "npm run format && npm run lint && npm run build",
+    "deploy" : "set NODE_ENV=production && gh-pages -d dist --nojekyll --cname xlynxx.xyz"
   },
   "dependencies": {
     "gh-pages": "^6.1.1",
