@@ -1,1 +1,0 @@
-import{_ as r,o as e,c,d as o,b as _}from"./index-DLV-F4lf.js";const s={};function a(n,t){return e(),c("h1",null,"PROJECTS")}const m=r(s,[["render",a]]),p=o({__name:"ProjectView",setup(n){return(t,f)=>(e(),c("main",null,[_(m)]))}});export{p as default};
